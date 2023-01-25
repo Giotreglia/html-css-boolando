@@ -15,12 +15,23 @@ body {
 header {
     background-color: rgb(255, 105, 0);
     box-shadow: 0px 5px 5px lightgrey;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+main {
+    padding-top: 80px;
+}
+
+.auto {
+    max-width: 1170px;
+    margin: auto;
 }
 
 .header_container {
     height: 80px;
-    max-width: 1170px;
-    margin: auto;
     justify-content: space-between;
     align-items: center;
 }
@@ -41,7 +52,7 @@ nav li {
     font-weight: bold;
 }
 
-.list_hover:hover {
+.list_hover:hover, .footer_list a:hover {
     text-decoration: underline;
 }
 
@@ -60,10 +71,9 @@ nav li {
 }
 
 .main_container {
-    max-width: 1170px;
-    margin: 80px auto;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 40px auto;
 }
 
 .column {
@@ -146,6 +156,43 @@ nav li {
     display: block;
 }
 
+footer {
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+
+.footer_container {
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.footer_list {
+    list-style: none;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+
+.footer_container a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.footer_left a {
+    font-size: 0.6rem;
+}
+
+.footer_right a {
+    font-size: 18px;
+}
+
+.footer_left span {
+    font-weight: bold;
+}
+
+.footer_right span {
+    font-size: 0.8rem;
+}
 
 
 
