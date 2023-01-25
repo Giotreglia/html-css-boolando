@@ -67,15 +67,18 @@ nav li {
 }
 
 .column {
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 10px);
     position: relative;
+    margin: 10px 0px;
 }
 
 .product_img {
     width: 100%;
 }
 
-.hidden {
+.product_img_hidden {
+    width: 100%;
+    margin-bottom: 4px;
     display: none;
 }
 
@@ -83,7 +86,11 @@ nav li {
     font-size: 30px;
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 20px;
+}
+
+.tag_preferito:hover {
+    color: red;
 }
 
 .tag_container {
@@ -96,7 +103,7 @@ nav li {
     color: white;
     font-size: 10px;
     font-weight: bold;
-    padding: 5px;
+    padding: 5px 10px;
     margin-right: 5px;
 }
 
@@ -128,6 +135,14 @@ nav li {
     font-size: 0.8rem;
     color: grey;
     text-decoration: line-through;
+}
+
+.product_img_container:hover .product_img {
+    display: none;
+}
+
+.product_img_container:hover .product_img_hidden {
+    display: block;
 }
 
 
