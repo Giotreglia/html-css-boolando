@@ -17,6 +17,14 @@ header {
     box-shadow: 0px 5px 5px lightgrey;
 }
 
+.header_container {
+    height: 80px;
+    max-width: 1170px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .menu_list {
     align-items: center;
 }
@@ -37,8 +45,8 @@ nav li {
     text-decoration: underline;
 }
 
-#logo {
-    height: 80%;
+.logo_container {
+    height: 40%;
 }
 
 .area_personale_container {
@@ -51,18 +59,77 @@ nav li {
     margin-left: 10px;
 }
 
-/* Debug */
-
-.header_container {
-    height: 80px;
+.main_container {
     max-width: 1170px;
-    margin: auto;
+    margin: 80px auto;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
-.debug .logo_container {
-    height: 100%;
-    padding: 20px;
+.column {
+    width: calc(100% / 3);
+    position: relative;
 }
+
+.product_img {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.tag_preferito {
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.tag_container {
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+}
+
+.tag {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.sconto {
+    background-color: red;
+}
+
+.eco {
+    background-color: green;
+}
+
+.brand {
+    color: grey;
+    font-size: 0.8rem;
+}
+
+.description {
+    font-weight: bold;
+}
+
+.price_discount {
+    font-size: 0.8rem;
+    color: red;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.price_no_discount {
+    font-size: 0.8rem;
+    color: grey;
+    text-decoration: line-through;
+}
+
+
+
 
