@@ -84,11 +84,11 @@ nav li {
 
 .product_img {
     width: 100%;
+    display: block;
 }
 
 .product_img_hidden {
     width: 100%;
-    margin-bottom: 4px;
     display: none;
 }
 
@@ -123,6 +123,10 @@ nav li {
 
 .eco {
     background-color: green;
+}
+
+.product_info {
+    margin-top: 4px;
 }
 
 .brand {
