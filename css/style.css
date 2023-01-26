@@ -77,9 +77,10 @@ nav li {
 }
 
 .column {
-    width: calc(100% / 3 - 10px);
+    width: calc(100% / 3);
     position: relative;
-    margin: 10px 0px;
+    padding-right: 10px;
+    margin-bottom: 20px;
 }
 
 .product_img {
