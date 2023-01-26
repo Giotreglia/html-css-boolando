@@ -77,9 +77,8 @@ nav li {
 }
 
 .column {
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 10px);
     position: relative;
-    padding-right: 10px;
     margin-bottom: 20px;
 }
 
